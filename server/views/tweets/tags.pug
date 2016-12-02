@@ -1,0 +1,10 @@
+extends ../shared/layout
+block main-content
+	#wrapper
+		h2 All tweets with tag =tag
+			table.tweets
+				tr
+					td Tweet:
+				each item in tweets
+					tr
+						td=item

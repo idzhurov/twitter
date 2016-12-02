@@ -1,0 +1,15 @@
+extends ../shared/layout
+block main-content
+	#wrapper
+		h1 Log In
+		form(method="post" action="/users/authenticate")
+			label(for="username") username
+			br
+			input(type="text" name="username" id="username")
+			br
+			label(for="password") Password
+			br
+			input(type="text" name="password" id="password")
+			br
+			input(type="submit" value="Login") 
+		

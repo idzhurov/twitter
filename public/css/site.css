@@ -1,0 +1,72 @@
+ul#nav {
+  font-family: Arial;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul#nav li{
+	display: inline-block;
+	width: 120px;
+}
+
+ul#nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul#nav li a:hover {
+  background-color: #111;
+}
+#wrapper {
+  position: relative;
+  top: 50px;
+  width: 80%;
+  min-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+  padding: 20px;
+}
+#wrapper * {
+  padding: 5px;
+}
+input {
+  color: #808080;
+}
+p {
+  font-size: 14px;
+}
+
+input[type="textarea"]{
+  width: 400px;
+  height: 50px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.globalError {
+  text-align: center;
+  font-size: 24px;
+  color: red;
+  margin-top: 20px;
+}
+
+.tweets {
+  width: 100%;
+}
+
+.tweets tbody tr:first-child td{
+  color: white;
+  background-color: #333;
+}
+
+.tweets td {
+  border: 1px solid #333;
+}

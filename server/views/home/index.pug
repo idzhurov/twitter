@@ -1,0 +1,32 @@
+extends ../shared/layout
+block main-content
+	#wrapper
+		if (currentUser)
+			h1 Hi There!
+			ul
+				li 
+					a(href='/tweet') Tweet!
+		else
+			h1 Hi There! Please use the above menu to log in.
+			br
+			br
+		table.tweets
+			tr
+				td Tweet:
+				td Tweeter:
+				td Created:
+				td Views:
+				td Likes:
+				if (currentUser)
+					td
+						Like
+			each item in tweets
+				tr
+					td=item.tweet
+					td=item.owner
+					td=item.date
+					td=item.views
+					td=item.likes
+					if (currentUser)
+						td
+							input(type='button' value='Like')
